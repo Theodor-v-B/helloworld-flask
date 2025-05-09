@@ -17,6 +17,14 @@ def hello_world():
 def hello():
     return "<h1>Hallo</h1>"
 
+@app.route('/about')
+def about():
+    return "Das ist eine Seite über unser Projekt."
+
+@app.route('/info')
+def info():
+    return "Das ist eine info-Seite über Hunde-Salons."
+
 ## TODO: Definiert eine Route auf den Pfad /25-01 mit einer Funktion, die "Hallo Kurs 25-01" zurückgibt
 @app.route('/25-01')
 def kurs():
